@@ -23,7 +23,6 @@ function shuffle(array) {
 	return array;
 }
 const name = "Miltank's Metronome Mayhem";
-const description = "Guess moves that have the opposite effect of the given moves!";
 const id = Tools.toId(name);
 const data = {};
 
@@ -46,7 +45,6 @@ class MMM extends Games.Game {
 		for (let i = 0, len = this.information.length; i < len; i++) {
 			this.questions[this.information[i]] = Object.keys(data[this.information[i]]);
 		}
-		this.description = description;
 	}
 
 	onStart() {
@@ -131,5 +129,5 @@ class MMM extends Games.Game {
 
 exports.name = name;
 exports.id = id;
-exports.description = description;
+exports.description = "Guess Pokemon based on the given attacks.";
 exports.game = MMM;

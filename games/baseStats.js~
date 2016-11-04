@@ -1,7 +1,6 @@
 'use strict';
 
 const name = "Pupitar's Power Placement";
-const description = "Guess a pokemon with the base stats given!";
 const id = Tools.toId(name);
 const data = {};
 const goodBP = [];
@@ -23,7 +22,6 @@ class Pupitars extends Games.Game {
 		this.points = new Map();
 		this.maxPoints = 5;
 		this.freeJoin = true;
-		this.description = description;
 	}
 
 	onSignups() {
@@ -86,5 +84,5 @@ class Pupitars extends Games.Game {
 
 exports.name = name;
 exports.id = id;
-exports.description = description;
+exports.description = "Guess a move with base power as close as possible to that the given power!";
 exports.game = Pupitars;

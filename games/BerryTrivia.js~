@@ -10,7 +10,6 @@
 'use strict';
 
 const name = "Berry Trivia";
-const description = "Guess berries based on the given descriptions.";
 const id = Tools.toId(name);
 const data = {
 	"Pokemon Items": {},
@@ -25,7 +24,6 @@ for (let i in Tools.data.items) {
 
 class BerryTrivia extends Games.Game {
 	constructor(room) {
-	    this.description = description;
 		super(room);
 		this.name = name;
 		this.id = Tools.toId(name);
@@ -86,5 +84,5 @@ class BerryTrivia extends Games.Game {
 
 exports.name = name;
 exports.id = id;
-exports.description = description;
+exports.description = "Guess berry answers based on the given descriptions.";
 exports.game = BerryTrivia;

@@ -1,7 +1,7 @@
 'use strict';
 
 const name = "Pancham's Pairs";
-const description = "Players try to pair the given mons according to ``/dexsearch`` parameters! Valid parameters include tier, generation, color, type, and ability. **Command:** " + ``Config.commandCharacter + "pair mon1, mon2, param``";
+const description = "Players try to pair the given mons according to ``/dexsearch`` parameters! Valid parameters include tier, generation, color, type, and ability. **Command:** " + Config.commandCharacter + "pair mon1, mon2, param";
 const id = Tools.toId(name);
 const generations = [151, 251, 386, 493, 649, 721];
 const data = {};

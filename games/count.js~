@@ -1,7 +1,6 @@
 'use strict';
 
 const name = "Count";
-const description = "Players try to count to the next number without failing!";
 const id = Tools.toId(name);
 class Count extends Games.Game {
 	constructor(room) {
@@ -12,7 +11,6 @@ class Count extends Games.Game {
 		this.curCount = 0;
 		this.started = true;
 		this.freeJoin = true;
-		this.description = description;
 	}
 
 	count(target, user) {
@@ -42,5 +40,5 @@ class Count extends Games.Game {
 
 exports.name = name;
 exports.id = id;
-exports.description = description;
+exports.description = "Count!";
 exports.game = Count;
